@@ -6,6 +6,7 @@ import typescriptParser from '@typescript-eslint/parser';
 
 const compat = new FlatCompat({
   baseDirectory: import.meta.url,
+  recommendedConfig: js.configs.recommended,
   resolvePluginsRelativeTo: import.meta.url,
 });
 
