@@ -1,14 +1,9 @@
-// src/index.js
-const express = require('express');
+import express from 'express';
+
 const app = express();
-const sequelize = require('./config/database');
-const authRoutes = require('./routes/auth');
 
-app.use(express.json());
-app.use('/auth', authRoutes);
+// Tu código aquí
 
-sequelize.sync().then(() => {
-  app.listen(3000, () => {
-    console.log('Server is running on port 3000');
-  });
+app.listen(process.env.PORT, () => {
+  console.log(`Server is running on port ${process.env.PORT}`);
 });

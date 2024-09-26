@@ -1,7 +1,7 @@
-const assert = require('assert');
+import { expect } from 'chai';
 
-describe('Example Test', function() {
-  it('should return true', function() {
-    assert.strictEqual(true, true);
+describe('Example Test', () => {
+  it('should pass', () => {
+    expect(true).to.be.true;
   });
 });
