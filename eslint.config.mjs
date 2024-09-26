@@ -1,5 +1,7 @@
-// eslint.config.cjs
-/** @type {import('eslint').Linter.Config} */
+// eslint.config.mjs
+import { Linter } from 'eslint';
+
+/** @type {Linter.Config} */
 const config = {
   env: {
     browser: true,
@@ -23,4 +25,4 @@ const config = {
   },
 };
 
-module.exports = config;
+export default config;
